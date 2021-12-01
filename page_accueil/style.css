@@ -61,6 +61,7 @@ header {
 #presentation {
   background-color:#f6f6f6;
   padding: 70px;
+  position: relative;
 }
 
 .titre_presentation h1 {
@@ -97,6 +98,10 @@ header {
   padding: 15px;
   color:#ffffff;
   border-radius: 30px 30px 30px 30px;
+  position:absolute;
+    top: 80%;
+    left: 50%;
+    transform:translate(-50%,-50%)
 }
 /*
 div#explorer {
@@ -331,7 +336,10 @@ footer {
 
 @media all and (min-width: 768px){
   div#explorer {
-    margin:0px 200px 0px 200px;   
+    position:absolute;
+    top: 80%;
+    left: 50%;
+    transform:translate(-50%,-50%)  
   }
   
 
@@ -445,7 +453,10 @@ img{
 
  
 div#explorer {
-  margin:0px 200px 0px 200px;   
+  position:absolute;
+  top: 80%;
+  left: 50%;
+  transform:translate(-50%,-50%)
 }
 
 }

@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+  }
+  :root {
+    --primary:#9356DC;
+    --secondary:#FF79DA;
+    --tertiaire:#99E2D0;
+    --home: #f6f6f6;
+  }
+
+  .gras{
+  font-weight: bold;
+  font-size: 20px;
+  }
+
+  p{
+    font-weight: lighter;
+  }
+
+  .none{
+    text-decoration: none;
+    list-style-type: none;
+    color: #353535;
+  }
+
+  body {       
+    font-family: "Roboto", sans-serif;
+    justify-content: center;
+    background-color:var(--home);
+    position: relative;
+    
+  }
+
+  header {
+    margin-top: 0px;
+    background-color:#ffffff;
+    padding: 15px;
+    position: relative;
+  }
+  #fleche_icone{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 25px;
+    left: 30px;
+   font-size: 20px;  
+  }
+
+  #logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Shrikhand", "cursive";
+    font-size: 3px;
+  }
+
+  #image_menu img {
+      width: 100%;
+      position:absolute;   
+      z-index:-1;
+      object-fit: cover;
+  }
+
+  #titre_menu{
+      display: flex;
+      align-items:center ;
+      justify-content: flex-start;
+      padding:20px;
+      font-family: "Shrikhand", "cursive";
+      font-size: 17px;
+      flex-wrap: wrap;
+  }
+
+  .heart{
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 10%;
+      font-size: 25px;
+  }
+
+  .heart:hover{ 
+    transform: scale(1.06);
+    cursor: pointer;
+    color: var(--primary);
+  }
+/***************** Menu section ***************/
+  #section_menu{  
+      border-radius: 40px 40px 0px 0px;
+      background-color: var(--home);
+      margin-top: 160px;
+      
+  }
+
+  
+  h3 {
+      margin:20px;
+      border-bottom:3px solid var(--tertiaire) ;
+      width: 35px;
+      padding-bottom: 4px;
+  }
+
+  .box_menu{
+    background-color: #fff;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 10px;  
+    border-radius: 13px;
+    margin: 0px 10px 15px 10px ;
+    padding-left: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    
+
+  }
+
+  .prix   {
+
+    display: flex;
+    position: absolute;
+    right: 40px;
+    /*transition: all 1s ease;*/
+    top: 0px;
+  }
+  
+ .check_box{
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0px;
+ /* right: 40px;*/
+ }
+
+ .menu_text h4,
+ .menu_text p
+ {
+   white-space:nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+ }
+
+.prix {
+  position: absolute;
+  right: 40px;
+ /* transition: all 1s ease;*/
+}
+
+
+ .box_menu:hover .prix {
+  right: 6rem;}
+
+  .box_menu
+  {
+      text-overflow: ellipsis; 
+     white-space: nowrap; 
+      overflow: hidden;  
+     padding-right: 80px;  
+  }
+
+
+
+
+
+
+.menu_animation .menu_text
+{
+display: flex;
+text-overflow: ellipsis; 
+white-space: nowrap; 
+overflow: hidden;
+
+}
+
+.menu_animation:hover
+{
+    padding-left: 30px;
+    margin-left:20px;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/********************* Animation CSS ********************/
+
+
+.check_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+  right:-5rem;
+  transition: all 1s ease;
+}
+
+
+.box_menu:hover .check_box{
+  
+  right:0rem;
+
+}
+
+
+.box_menu:hover
+{
+  text-overflow: ellipsis;
+}
+
+.check
+{
+  width: 80px;
+  height: 80px;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-bottom:13px;
+}
+
+.fa-check-circle
+{
+  color: white;
+  font-size: 20px;
+}
+
+.box_menu:hover .fa-check-circle
+{
+ animation: circle 1s 200ms ease-out forwards; 
+}
+
+@keyframes circle
+{
+  0% {transform: translate(0deg);}
+  100% {transform: rotate(1turn);}
+}
+
+.box_menu:hover .prix
+{
+  right:6rem;
+}
+
+.prix
+{
+  position: absolute;
+  right: 40px;
+  transition: all 1s ease;
+}
+
+
+.menu1{
+
+  animation: effet 2s 1s ease-out;
+}
+
+
+.menu2
+{
+  animation: effet 2s 1.5s ease-out;
+}
+
+.menu3
+{
+  animation: effet 2s 2s ease-out;
+}
+
+
+@keyframes effet 
+
+{
+  from { opacity: 0; transform:translate(0%,-10%);}
+  to   { opacity: 1; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************v BOUTON *******************/
+#for_bouton{
+  margin-bottom: 100px;
+}
+
+
+#bouton_com{
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   width: 250px;
+  height: 60px;
+ 
+  
+  position:absolute;
+  top: 81%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+
+  /*padding: 20px;*/
+  background:linear-gradient(var(--secondary),var(--primary));
+  color: #fff;
+  box-shadow: 2px 2px 10px 0px #b6b5b5;  
+  font-size: 12px;  
+  box-sizing: border-box;
+}
+
+
+#bouton_com:hover {
+/*transform: scale(1.06);*/
+
+cursor: pointer;
+}
+
+/*  footer */
+
+footer {
+
+    height: 250px; 
+    background-color:#353535;
+    
+  }
+  
+  .logo img {
+    margin:20px;
+   width: 105px;  
+   filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(117deg) brightness(107%) contrast(101%);
+  }
+  
+  .text-icone {
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction:column; 
+    margin-top:-35px;
+    margin-left:50px;
+    margin-bottom:10px;  
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .icone_footer {
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    position:relative;
+    right:30px;
+    top: 19px;
+  }
+  
+  .contact {
+    margin-left:20px;
+    margin-bottom:10px;  
+    color: #ffffff;
+    font-weight: bold;
+  }
