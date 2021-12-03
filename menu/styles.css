@@ -27,6 +27,11 @@
     list-style-type: none;
     color: #353535;
   }
+  .nonee{
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+  }
 
   body {       
     font-family: "Roboto", sans-serif;
@@ -281,50 +286,39 @@ overflow: hidden;
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*****************v BOUTON *******************/
-#for_bouton{
-  margin-bottom: 100px;
+
+#bouton_com
+{
+    display: flex;
+    justify-content: center;
+    background-color: #f6f6f6;
 }
 
+#bouton_com a
 
-#bouton_com{
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-   width: 250px;
-  height: 60px;
- 
-  
-  position:absolute;
-  top: 81%;
-  left: 50%;
-  transform:translate(-50%,-50%);
-
-  /*padding: 20px;*/
-  background:linear-gradient(var(--secondary),var(--primary));
-  color: #fff;
-  box-shadow: 2px 2px 10px 0px #b6b5b5;  
-  font-size: 12px;  
+{
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; 
   box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 40px;
+  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom:40px;
+  margin-top:20px;
+  text-decoration: none;
 }
 
-
+ 
 #bouton_com:hover {
-/*transform: scale(1.06);*/
 
-cursor: pointer;
+  cursor: pointer;
+
 }
+
 
 /*  footer */
 
@@ -362,11 +356,15 @@ footer {
     top: 19px;
   }
   
-  .contact {
+  .contact a{
+    display: flex;
+    flex-direction: column;
     margin-left:20px;
     margin-bottom:10px;  
     color: #ffffff;
     font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
   }
 
   /** heart **/ 
@@ -399,9 +397,9 @@ footer {
 
 /***********      media queries    ***********/
 
-
+/**         Mode tablette         **/ 
   
-@media screen and (min-width: 768px) /*tablette*/ 
+@media screen and (min-width: 768px) 
 {
      #bloc_menu{
         display: flex;
@@ -436,26 +434,4 @@ footer {
     flex-wrap: wrap;
     padding-right: 30px; 
 }
-}
-
-
-@media all and (min-width:828px){
-  #bouton_com{
-   
-    position:absolute;
-    top: 77%;
-    left: 50%;
-    transform:translate(-50%,-50%);
-  }
-}
-
-
-@media all and (min-width:1260px){
-  #bouton_com{
-   
-    position:absolute;
-    top: 69%;
-    left: 50%;
-    transform:translate(-50%,-50%);
-  }
 }
